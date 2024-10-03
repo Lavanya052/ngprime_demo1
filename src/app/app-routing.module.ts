@@ -5,12 +5,12 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
-  // {path:'',component:MainLayoutComponent,
-  //   children:[
-  //     {path:'',component:DashboardComponent}
-  //   ]
-  // }
-  {path:"",component:SidebarComponent}
+  {path:'',component:MainLayoutComponent,
+    children:[
+      {path:'',component:DashboardComponent}
+    ]
+  }
+  // {path:"",component:SidebarComponent}
 ];
 
 @NgModule({

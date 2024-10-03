@@ -13,6 +13,6 @@ export class SidebarComponent {
       this.sidebarRef.close(e);
   }
 
-  sidebarVisible: boolean = false;
+  sidebarVisible: boolean = true;
 
 }
