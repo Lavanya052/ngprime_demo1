@@ -1,3 +1,14 @@
-<app-sidebar></app-sidebar>
-<app-header></app-header>
-<router-outlet></router-outlet>
+<!-- <div class="flex h-screen">
+    <app-sidebar class="w-64 bg-gray-200"></app-sidebar>
+    <div class="flex-1 flex flex-col">
+      <app-header class="h-16 bg-gray-800 text-white flex items-center px-4"></app-header>
+      <div class="flex-1 overflow-auto p-4">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+   -->
+
+   <app-header (toggleSidebarEvent)="toggleSidebar()"></app-header>
+<app-sidebar #sidebar></app-sidebar>
+<app-table></app-table>

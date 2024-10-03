@@ -7,12 +7,22 @@ import { Sidebar } from 'primeng/sidebar';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-  @ViewChild('sidebarRef') sidebarRef!: Sidebar;
+  // @ViewChild('sidebarRef') sidebarRef!: Sidebar;
 
-  closeCallback(e: Event): void {
-      this.sidebarRef.close(e);
+  // closeCallback(e: Event): void {
+  //     this.sidebarRef.close(e);
+  // }
+
+  // sidebarVisible: boolean = false;
+
+  sidebarVisible: boolean = false;
+
+  toggleSidebar() {
+    this.sidebarVisible = !this.sidebarVisible;
   }
 
-  sidebarVisible: boolean = true;
+  closeSidebar() {
+    this.sidebarVisible = false;
+  }
 
 }
